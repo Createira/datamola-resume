@@ -1,0 +1,106 @@
+@media screen and (max-width: 1024px) {
+  .navigation-item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-image {
+    max-width: 220px;
+  }
+
+  .section {
+    margin: var(--section-mob-margin) 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .navigation {
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+
+    transition: all 0.5s ease-in;
+    background-color: var(--blue);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .navigation {
+    font-size: var(--medium-font-size);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .toggle-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .toggle-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 0px;
+  }
+
+  .path-image {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .slide {
+    height: 40vh;
+  }
+
+  .facts-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navigation {
+    width: 80%;
+  }
+
+  .slider-container {
+    padding: 0 10px;
+  }
+
+  .slide {
+    height: 20vh;
+  }
+}

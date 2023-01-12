@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,400;1,700&display=swap");
+
+:root {
+  --section-margin: 100px;
+  --section-mob-margin: 50px;
+
+  --body-font: "Open Sans", sans-serif;
+  --title-font: "Averia Sans Libre", cursive;
+
+  --tiny-font-size: 16px;
+  --small-font-size: 18px;
+  --medium-font-size: 24px;
+  --big-font-size: 36px;
+  --large-font-size: 48px;
+
+  --font-light: 400;
+  --font-medium: 600;
+  --font-bold: 800;
+
+  --white: #fff;
+  --gray: #bec3d0;
+  --light-gray: #edeef1;
+  --yellow: #f4bf4a;
+  --green: #69c480;
+  --purple: #a578e1;
+  --blue: #23325a;
+  --light-blue: #31416d;
+  --lighter-blue: rgba(49, 65, 109, 0.84);
+  --dark-blue: #192341;
+  --red: #eb5757;
+  --black: #000;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--blue);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h3 {
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hydrated {
+  visibility: inherit;
+}
+
+.container {
+  padding: 0 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: var(--section-margin) 0;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-family: var(--title-font);
+  font-size: var(--large-font-size);
+}
